@@ -1,0 +1,14 @@
+doctype html 
+html 
+    head
+        style
+            include ../public/main.css 
+
+        title Edit User 
+    body 
+        div.delete-page-wrapper 
+            div.top-section Copy ID From Users Page And Paste It Here 
+            div.bottom-section
+                form(action="/users/edit" method="POST")
+                    input(type="text" name="id" class="text")
+                    input(type="submit" value="Edit User" class="input-btn")

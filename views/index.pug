@@ -1,0 +1,31 @@
+doctype html
+html 
+    head 
+        style
+            include ../public/main.css
+        title Home Page
+
+        div.home-page-wrapper 
+            div.links-wrapper 
+                div.link.left
+                    a(href="/users") Create User
+                div.link.right
+                    a(href="/users/viewUsers") View Users
+                div.link.left
+                    a(href="/users/delete") Delete Users
+                div.link.right
+                    a(href="/users/edit") Edit User
+
+        div.delete-page-wrapper.home 
+            div.bottom-section
+                form(action="/users/search" method="POST")
+                    div First Name
+                    input(name="first" class="text" type="text")
+                    input(class="input-btn" type="submit" value="Search")
+
+        div.delete-page-wrapper.home 
+            div.bottom-section
+                form(action="/users/search" method="POST")
+                    div Last Name
+                    input(name="last" class="text" type="text")
+                    input(class="input-btn" type="submit" value="Search")

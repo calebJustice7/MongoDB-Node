@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    background-image: url('https://wallpaperaccess.com/full/31192.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-page-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 18%;
+}
+.home-page-wrapper .links-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+}
+.home-page-wrapper .links-wrapper .link a{
+    color: white;
+    font-size: 1.05em;
+    text-decoration: none;
+}
+.home-page-wrapper .links-wrapper .link {
+    margin: 20px;
+    text-align: center;
+}
+.delete-page-wrapper {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 17%;
+}
+.delete-page-wrapper .top-section {
+    font-size: 1.6em;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+.delete-page-wrapper .bottom-section form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.delete-page-wrapper .bottom-section .text {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 14px;
+    border-radius: 4px;
+    width: 330px;
+    position: absolute;
+    font-size: 1.05em;
+}
+.delete-page-wrapper .bottom-section .input-btn {
+    position: absolute;
+    right: 120px;
+    padding: 14px;
+    background-color: #cbcbcb;
+    font-size: 1.05em;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.create-user-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 16%;
+}
+.create-user-wrapper form {
+    width: 370px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 7px;
+    color: white;
+}
+.create-user-wrapper form .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+.create-user-wrapper .input-wrapper {
+    margin: 20px 0;
+}
+.create-user-wrapper .input-wrapper input {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    outline: none;
+    padding: 8px;
+    border-radius: 3px;
+    width: 40%;
+}
+.create-user-wrapper .input-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 39px;
+    margin-bottom: 15px;
+}
+.create-user-wrapper .input-btn-wrapper input {
+    border: 2px solid #dadfea;
+    border-radius: 3px;
+    background: none;
+    font-size: 1em;
+    padding: 7px 14px;
+    color: #dadfea;
+    cursor: pointer;
+}
+.home {
+    padding-top: 4%;
+}
+.home form > div{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: white;
+    font-size: 1.35em;
+}
+.not-found-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 16%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 79vh;
+}
+.not-found-wrapper .body .error{
+    font-size: 3.4em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.not-found-wrapper .error-message {
+    margin: 30px 0;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+.not-found-wrapper .body button {
+    background: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 12px 22px;
+}
+.not-found-wrapper .body button a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+}

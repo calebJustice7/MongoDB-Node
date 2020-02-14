@@ -1,0 +1,36 @@
+doctype html 
+html 
+    head 
+        style
+            include ../public/main.css
+            
+        title Edit User Page 
+    body 
+        div.create-user-wrapper
+            form(action="/users/editUser" method="POST")
+                div.input-wrapper 
+                    label ID
+                    input(name="id" disabled value=`${data._id}`)
+
+                div.input-wrapper 
+                    label User Name
+                    input(name="userName" value=`${data.userName}`)
+
+                div.input-wrapper 
+                    label First Name
+                    input(name="first" value=`${data.first}`)
+
+                div.input-wrapper 
+                    label Last Name
+                    input(name="last" value=`${data.last}`)
+
+                div.input-wrapper 
+                    label Email
+                    input(name="email" value=`${data.email}`)
+
+                div.input-wrapper 
+                    label Age
+                    input(name="age" value=`${data.age}`)
+
+                div.input-btn-wrapper 
+                    input(class="input-btn" type="submit" value="Edit User")

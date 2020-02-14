@@ -1,0 +1,14 @@
+doctype html
+html 
+    head 
+        style
+            include ../public/main.css
+
+        title Delete A User
+    body 
+        div.delete-page-wrapper 
+            div.top-section Copy ID From View Users Page And Paste It Here
+            div.bottom-section 
+                form(action="/users/delete" method="POST")
+                    input(name="id" class="text" type="text")
+                    input(class="input-btn" type="submit" value="Delete")

@@ -1,0 +1,32 @@
+doctype html 
+html 
+    head 
+        style
+            include ../public/main.css
+
+        title Create User 
+    body 
+        div.create-user-wrapper 
+            form(action="/users/newUser" method="POST") 
+                div.input-wrapper 
+                    label User Name
+                    input(type="text" name="userName")
+
+                div.input-wrapper 
+                    label First Name
+                    input(type="text" name="first")
+
+                div.input-wrapper 
+                    label Last Name
+                    input(type="text" name="last")
+
+                div.input-wrapper 
+                    label Email Address
+                    input(type="text" name="email")
+
+                div.input-wrapper 
+                    label Age
+                    input(type="text" name="age")
+
+                div.input-btn-wrapper
+                    input(class="input-btn" type="submit" value="Create New User")

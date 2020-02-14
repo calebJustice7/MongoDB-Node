@@ -1,0 +1,26 @@
+doctype html 
+html
+    head 
+        title Found User
+        style 
+            include ../public/table.css
+    body
+    
+        form(class="view-user-form" method="POST")
+            div.table-row 
+                input(readonly value="User ID")
+                input(readonly value="Username")
+                input(readonly value="First Name")
+                input(readonly value="Last Name")
+                input(readonly value="Age")
+                input(readonly value="Email address")
+
+        each val in data 
+            form(class="view-user-form-body" method="POST")
+                div.table-row 
+                    input(readonly value=val._id)
+                    input(readonly value=val.userName name="username")
+                    input(readonly value=val.first name="name")
+                    input(readonly value=val.last name="last")
+                    input(readonly value=val.age name="age")
+                    input(readonly value=val.email name="email")
